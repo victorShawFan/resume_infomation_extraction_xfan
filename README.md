@@ -15,7 +15,7 @@ python resume_ext_pipeline_0804.py \
       --cls_model_path=/home/xiaofan/resume_extraction/BERT_CLS/models/bert_res_cls_merge \ # 分类模型绝对路径  
       --ext_model_path_pe=/home/xiaofan/resume_extraction/triple_generation/models/rebel_resume_per_edu \ # 抽取模型1绝对路径  
       --ext_model_path_wp=/home/xiaofan/resume_extraction/triple_generation/models/rebel_resume_work_proj \ # 抽取模型2绝对路径  
-      --test_file_path=/home/xiaofan/resume_extraction/data/txt_sample/tmp \ # 输入的文件夹，将已经parse成txt的简历文件们放在该文件夹路径下即可  
+      --test_file_path=/home/xiaofan/resume_extraction/data/txt_sample/tmp \ # 输入的文件夹，将简历parse而成的txt们放在该文件夹路径下即可  
       --cuda_num=2 \ # 使用的GPU号数  
       --num_beams=2 \ # 超参，生成式抽取模型使用beam search，这个数值越高，推理越慢，结果可能越准确  
       --version=0 # 会输出在结果文件的文件名中，用于输出版本控制和对照观察  
